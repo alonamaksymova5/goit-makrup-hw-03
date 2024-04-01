@@ -50,11 +50,10 @@ img {
 }
 
 .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
 
 .section {
@@ -77,7 +76,9 @@ img {
 
 .logo-menu {
     display: flex;
-    margin-right: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+    align-items: center;
 }
 
 .title-logo {
@@ -88,7 +89,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-left: 156px;
+    margin-right: 76px;
 }
 
 .tiny-name-logo {
@@ -150,7 +151,7 @@ img {
 
 .hero {
     background-color: #2e2f42;
-    padding: 188px 188px;
+    padding: 188px 0;
 }
 
 .hero-title {  
@@ -175,9 +176,12 @@ img {
     background: #4d5ae5;
     cursor: pointer;
     font-family: inherit;
-    padding: 16px 32px 16px 32px;
     display: block;
     margin: 0 auto;
+    border-radius: 4px;
+    border: none;
+    height: 56px;
+    min-width: 169px;
 }
 
 .hero-btn:hover ,
@@ -203,6 +207,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .text {
@@ -236,12 +241,11 @@ img {
 
 .team-list {
     display: flex;
-    gap: 24px 48px;
+    gap: 24px;
 }
 
 .team-item {
     background-color: #ffffff;
-    padding-bottom: 32px;
     width: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
@@ -257,11 +261,12 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-top: 32px;
+    margin-bottom: 8px;
 }
 
 .manager {
     text-align: center;
+    padding: 32px 0;
 }
 
 .section-three {
@@ -296,6 +301,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .paragraph-two {
@@ -303,9 +309,8 @@ img {
 
 .portfolio-frame {
     border: 1px solid #E7E9FC;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
+    border-top: none;
 }
 
 /* Footer */
@@ -323,6 +328,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-tiny {
@@ -341,5 +348,4 @@ img {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
-    padding-top: 16px;
 }
